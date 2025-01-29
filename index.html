@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Categorías</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-sm my-5">
+        <div class="row mb-4 align-items-center">
+            <!-- Imagen 1 -->
+            <div class="col-auto">
+                <img src="src/ARUSLOGO.png" alt="Logo 1" class="img-fluid" style="max-width: 300px;">
+            </div>
+
+            <!-- Información de la cabecera -->
+            <div class="col">
+                <h1 class="text-center mb-3">Documentación de la Mesa de Ayuda</h1>
+                <p class="text-center mb-1">Fecha: 2025/01/29</p>
+                <p class="text-center mb-1">Versión: 1.0.0</p>
+                <p class="text-center mb-1">Autor: Nolberto Carmen Gomez</p>
+                <p class="text-center mb-1">Revisión: 1.0.0</p>
+                <p class="text-center mb-1">Contacto: mesa_ayuda@riopaila-castilla.com - nolberto.carmen@arus.com.co</p>
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="col-auto">
+                <img src="src/RIOPAILALOGO.png"Logo 2" class="img-fluid" style="max-width: 300px;">
+            </div>
+        </div>
+        <h1 class="text-center mb-4">Gestión de Categorías</h1>
+
+        <form class="p-4 border rounded bg-light">
+            <!-- Select de Categoría -->
+            <div class="mb-3 form-floating">
+                <select id="category" class="form-select" required>
+                    <option value="" selected disabled>Selecciona una categoría</option>
+                </select>
+                <label for="category">Categoría</label>
+            </div>
+
+            <!-- Select de Subcategoría -->
+            <div class="mb-3 form-floating">
+                <select id="subcategory" class="form-select" disabled required>
+                    <option value="" selected disabled>Selecciona una subcategoría</option>
+                </select>
+                <label for="subcategory">Subcategoría</label>
+            </div>
+
+            <!-- Select de Detalle -->
+            <div class="mb-3 form-floating">
+                <select id="detail" class="form-select" disabled required>
+                    <option value="" selected disabled>Selecciona un detalle</option>
+                </select>
+                <label for="detail">Detalle</label>
+            </div>
+        </form>
+
+        <!-- Contenedor para mostrar información detallada -->
+        <div id="detailInfo" class="container-sm my-3 p-3 border rounded bg-light"></div>
+
+        <!-- Botón para copiar al portapapeles -->
+        <div class="mb-3">
+            <button id="copyButton" class="btn btn-primary w-100">Copiar al portapapeles</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
